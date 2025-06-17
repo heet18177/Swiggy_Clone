@@ -1,4 +1,5 @@
 import React from "react";
+import { IoStarSharp } from "react-icons/io5";
 
 export const Card = (props) => {
   console.log("props", props);
@@ -17,9 +18,18 @@ export const Card = (props) => {
           {props.offer}
         </div>
       </div>
-      <div className="bottom-0 left-0 right-0 p-2 bg-white rounded-b-[15px]">
-        <div className="text-[16px] font-semibold">{props.title}</div>
-        <div className="text-[14px] text-gray-600">{props.rating}</div>
+      <div className="p-1 bg-white rounded-b-[15px]">
+        <div className="text-[18px] font-bold">{props.title}</div>
+        <div className="flex gap-1 text-[15px] font-bold">
+          <div>
+            <IoStarSharp/>
+          </div>
+          <div>{props.rating}</div>
+          <div>{props.minTime}-</div>
+          <div>{props.maxTime} mins</div>
+        </div>
+        <div className="text-gray-600">{props.name}</div>
+        <div className="text-gray-600">{props.place}</div>
       </div>
     </>
   );

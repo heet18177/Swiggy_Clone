@@ -33,15 +33,21 @@ export const Resto = () => {
           Top restaurants in jodhpur
         </div>
         <div className="flex">
-          <div className="flex cursor-pointer justify-center items-center w-[30px] h-[30px] bg-slate-200 rounded-full mx-2 ">
-            <FaArrowLeft onClick={leftSide} />
+          <div
+            onClick={leftSide}
+            className="flex cursor-pointer justify-center items-center w-[30px] h-[30px] bg-slate-200 rounded-full mx-2 "
+          >
+            <FaArrowLeft />
           </div>
-          <div className="flex cursor-pointer justify-center items-center  w-[30px] h-[30px] bg-slate-200 rounded-full mx-2 ">
-            <FaArrowRight onClick={rightSide} />
+          <div
+            onClick={rightSide}
+            className="flex cursor-pointer justify-center items-center  w-[30px] h-[30px] bg-slate-200 rounded-full mx-2 "
+          >
+            <FaArrowRight />
           </div>
         </div>
       </div>
-      <div className="flex gap-2 overflow-hidden">
+      <div className="flex gap-3 overflow-hidden">
         {restaurants.map((res, index) => {
           return (
             <>
@@ -56,6 +62,7 @@ export const Resto = () => {
           );
         })}
       </div>
+      <hr className="mt-3"/>
     </div>
   );
 };

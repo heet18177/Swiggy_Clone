@@ -1,4 +1,5 @@
 import { Catagory } from "./Components/Catagory";
+import { Delivery } from "./Components/Delivery";
 import { Header } from "./Components/Header";
 import { Resto } from "./Components/Resto";
 
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <Catagory />
       <Resto />
+      <Delivery/>
     </div>
   );
 }
