@@ -6,7 +6,7 @@ export const Catagory = () => {
   const [slide, setSlide] = useState(0);
 
   const fatchCatagory = async () => {
-    const res = await fetch("http://localhost:5000/categories");
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/categories`);
 
     const data = await res.json();
     setCategories(data);
@@ -54,7 +54,10 @@ export const Catagory = () => {
               style={{ transform: `translateX(-${slide * 100}%)` }}
               className="w-[150px] shrink-0 duration-500"
             >
-              <img src={"http://localhost:5000/images/" + cat.image} alt="" />
+              <img
+                src={`${import.meta.env.VITE_BACKEND_URL}/images/` + cat.image}
+                alt=""
+              />
             </div>
           );
         })}

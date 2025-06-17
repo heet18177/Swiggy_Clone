@@ -7,7 +7,9 @@ export const Resto = () => {
   const [slids, setSlids] = useState(0);
 
   const fetchRestaurants = async () => {
-    const res = await fetch("http://localhost:5000/top-restaurant-chains");
+    const res = await fetch(
+      `${import.meta.env.VITE_BACKEND_URL}/top-restaurant-chains`
+    );
     const apidata = await res.json();
     setRestaurants(apidata);
   };
@@ -62,7 +64,7 @@ export const Resto = () => {
           );
         })}
       </div>
-      <hr className="mt-3"/>
+      <hr className="mt-3 border-2 border-gray-200 " />
     </div>
   );
 };

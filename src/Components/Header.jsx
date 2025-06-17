@@ -34,7 +34,7 @@ export const Header = () => {
         ></div>
       </div>
 
-      <header className="p-[15px] pl-8 shadow-xl">
+      <header className="p-[15px] pl-8 shadow-xl sticky">
         <div className="max-w-[1200px] mx-auto flex items-center">
           <div className="max-w-[100px]">
             <img src="Images/SwiggyLogo.png" className="w-full" alt="Logo" />
