@@ -20,12 +20,12 @@ export const Resto = () => {
 
   const leftSide = () => {
     if (slids === 0) return false;
-    setSlids(slids - 2);
+    setSlids(slids - 3);
   };
 
   const rightSide = () => {
     if (restaurants.length - 4 == slids) return false;
-    setSlids(slids + 2);
+    setSlids(slids + 3);
   };
 
   return (

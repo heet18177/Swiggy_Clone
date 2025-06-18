@@ -20,12 +20,12 @@ export const Card = (props) => {
       </div>
       <div className="p-1 bg-white rounded-b-[15px]">
         <div className="text-[18px] font-bold">{props.title}</div>
-        <div className="flex gap-1 text-[15px] font-bold items-center">
+        <div className="flex text-[15px] font-bold items-center gap-2">
           <div>
             <IoStarSharp />
           </div>
           <div>{props.rating}</div>
-          <div>{props.minTime}-</div>
+          <div>{props.minTime} -</div>
           <div>{props.maxTime} mins</div>
         </div>
         <div className="text-gray-600">{props.name}</div>
