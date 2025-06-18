@@ -29,7 +29,7 @@ export const Resto = () => {
   };
 
   return (
-    <div className="max-w-[1200px] mx-auto ">
+    <div className=" md:max-w-[1200px] mx-auto ">
       <div className="flex items-center justify-between my-3">
         <div className="text-[25px] font-bold mt-2">
           Top restaurants in jodhpur
@@ -65,6 +65,7 @@ export const Resto = () => {
         })}
       </div>
       <hr className="mt-3 border-2 border-gray-200 " />
+    
     </div>
   );
 };

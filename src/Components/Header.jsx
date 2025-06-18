@@ -34,7 +34,7 @@ export const Header = () => {
         ></div>
       </div>
 
-      <header className="p-[15px] pl-8 shadow-xl sticky">
+      <header className="p-[15px] pl-8 shadow-xl sticky top-0 z-50 bg-white">
         <div className="max-w-[1200px] mx-auto flex items-center">
           <div className="max-w-[100px]">
             <img src="Images/SwiggyLogo.png" className="w-full" alt="Logo" />
@@ -49,7 +49,7 @@ export const Header = () => {
               onClick={showMenu}
             />
           </div>
-          <nav className="flex list-none ml-auto gap-7 text-[17px] font-semibold ">
+          <nav className="hidden md:flex list-none ml-auto gap-7 text-[17px] font-semibold ">
             <li className="flex items-center gap-2 hover:text-orange-600">
               <IoSearchOutline /> Search
             </li>

@@ -24,7 +24,13 @@ export const Delivery = () => {
             Restaurants with online food delivery in jodhpur
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-3">
+        <div>
+          <div className="max-w-[1200px] mx-auto flex my-4 gap-3">
+            <div className="p-2 rounded-md shadow">filter</div>
+            <div className="p-2 rounded-md shadow">sort by</div>
+          </div>
+        </div>
+        <div className="grid-cols-4 gap-3 md:grid">
           {restaurants.map((rest, index) => {
             return <Card {...rest} key={index} />;
           })}
