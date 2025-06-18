@@ -6,11 +6,11 @@ export const Card = (props) => {
   return (
     <div className="flex-col">
       <div className="w-[280px] h-[190px] relative shrink-0 grow">
-        <div className="w-full h-full overflow-hidden rounded-[15px]">
+        <div className="w-full h-full overflow-hidden rounded-[15px] group">
           <img
             src={`${import.meta.env.VITE_BACKEND_URL}/images/` + props.image}
             alt="Restaurant"
-            className="w-full h-full object-cover rounded-[15px] hover:scale-105 duration-300"
+            className="w-full h-full object-cover rounded-[15px] duration-300 group-hover:scale-110"
             loading="lazy"
           />
         </div>
